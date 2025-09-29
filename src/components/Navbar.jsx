@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoNav from "../assets/img/logoNav.jpg"
 
 export const Navbar = () => {
 
@@ -6,9 +7,15 @@ export const Navbar = () => {
 		<nav className="navbar nav-config">
 			<div className="container-fluid">
 				<Link to={"/"} className="navbar-brand text-white">
-					<img src="https://imgs.search.brave.com/v6WE4ZF13NcBwjDFuFNAkr40yo86TshrPDFaOovI-vw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvNDk2/ODc2LmpwZw" alt="" />
+					<img className="img-navbar" src={logoNav} alt="starwars logo" />
 				</Link>
-				<button className="btn btn-primary">Favorites(lenght-variable) 🔽​</button>	
+				<div className="dropdown">
+					<button type="button" className="btn btn-dark dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">Favorite</button>
+					<ul className="dropdown-menu">
+						<li>ejemplo</li>
+					</ul>
+				</div>
+					
 			</div>
 		</nav>
 	);

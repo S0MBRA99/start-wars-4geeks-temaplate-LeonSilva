@@ -1,15 +1,40 @@
 body{
-    /*background-image: url(https://imgs.search.brave.com/k0S8w5LYNLD-umwHaFoTos6AULsdSOYI0slkfYdw0f0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY3RmYXNzZXRz/Lm5ldC9rNWZ5MmF4/ZHJzcXIvMm1IVUt4/WmliNDVER2MyR21R/cHRzYy8wYTM4Nzcw/ZDMyODIwMjVmYTBh/NzRlY2Y4ZDYxM2U2/Yi9BZG9iZVN0b2Nr/XzExNTAyMzUwNTQu/anBlZz9xPTgwJmZt/PXdlYnAmdz0xOTIw);
+    background-image: url(./assets/img/fondo-hiperespacial-3d-con-efecto-tunel-de-urdimbre.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;*/
-    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
+}
+
+::-webkit-scrollbar {
+  height: 15px; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b3838;     /* color de la barra en sí */
+  border-radius: 4px;   /* redondeo */
+}
+
+#root{
+    height: 100vh;
 }
 
 .nav-config{
     min-height: 8%;
-    box-shadow: 0px 1px 6px rgba(245, 245, 245, 0.972);
+    box-shadow: 0px 1px 16px rgba(245, 245, 245, 0.972);
+}
+
+.img-navbar{
+    height: 65px;
+    width: 110px;
+    border: none;
+    display: block;
+    box-shadow: -150px -150px 150px rgba(45, 5, 5, 0.972);
 }
 
 .main-config{
@@ -19,21 +44,31 @@ body{
 
 .section-title{
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    box-shadow: 1px 2px 10px rgba(235, 234, 234, 0.972);
+    border-radius: 100%;
 }
 
-.article-config{
+.sectionCharacterBox{
+    box-shadow: 1px 20px 10px rgba(235, 234, 234, 0.972);
+    background-color: black;
+}
+
+.button-shadow{
+    box-shadow: 0px 1px 6px rgba(235, 234, 234, 0.972);
+}
+
+.article-config {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
-    
+}
+
+.img-card{
+    object-fit: cover;
+    height: 75%;
 }
 
 .footer-size{
     min-height: 6%;
-    box-shadow: 0px -1px 6px rgba(245, 245, 245, 0.972);
+    box-shadow: 0px -1px 16px rgba(245, 245, 245, 0.972);
 }
 
-#root{
-    height: 100vh;
-}
