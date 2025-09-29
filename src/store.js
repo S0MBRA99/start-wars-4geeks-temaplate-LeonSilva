@@ -2,7 +2,8 @@ export const initialStore=()=>{
   return{
     characters: [],
     planets: [],
-    starships: []
+    starships: [],
+    liked: []
   }
 }
 
@@ -34,6 +35,24 @@ export default function storeReducer(store, action = {}) {
         ...store,
         starships: starshipsObj,
       };
+    
+    case 'setLiked':  
+
+      const {likedObj} = action.payload
+
+      return {
+        ...store,
+        liked: [...store.liked,likedObj]
+      };
+
+    case 'deleteLiked':
+
+      const {dislikeObj} = action.payload
+
+      return {
+        ...store,
+        liked: dislikeObj
+      }
 
     default:
       throw Error('Unknown action.');

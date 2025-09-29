@@ -55,14 +55,15 @@ export const Home = () => {
       <section className="m-5">
         <h2 className="section-title text-center">Characters</h2>
         <article className="article-config">
-          {store.characters.map((character) => {
-            console.log(character);
+          {store.characters.map((character,index) => {
+            //console.log(character);
             return (
               <Card
                 name={character.name}
                 imgCard={`https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/characters/${Number(
                   character.uid
                 )}.jpg`}
+                key={index}
               />
             );
           })}
@@ -71,13 +72,14 @@ export const Home = () => {
       <section className="m-5">
         <h2 className="section-title text-center">Planets</h2>
         <article className="article-config">
-          {store.planets.map((planet) => {
+          {store.planets.map((planet,index) => {
             return (
               <Card
                 name={planet.name}
                 imgCard={`https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/planets/${Number(
                   planet.uid
                 )}.jpg`}
+                key={index}
               />
             );
           })}
@@ -86,13 +88,14 @@ export const Home = () => {
       <section className="m-5">
         <h2 className="section-title text-center">StarShips</h2>
         <article className="article-config">
-          {store.starships.map((starship) => {
+          {store.starships.map((starship,index) => {
             return (
               <Card
                 name={starship.name}
                 imgCard={`https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img/starships/${Number(
                   starship.uid
                 )}.jpg`}
+                key={index}
               />
             );
           })}

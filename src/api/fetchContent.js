@@ -31,12 +31,18 @@ export function getCharacter(id) {
 export function getPlanet(id) {
   return fetch(`https://www.swapi.tech/api/planets/${id}`)
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      console.log(data)
+      return data
+    })
     .catch((err) => console.error(err));
 }
 export function getStarship(id) {
   return fetch(`https://www.swapi.tech/api/starships/${id}`)
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => {
+      //console.log(data)
+      return data
+    })
     .catch((err) => console.error(err));
 }

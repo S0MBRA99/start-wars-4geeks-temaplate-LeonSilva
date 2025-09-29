@@ -15,7 +15,7 @@ const PageCharactersFetchLayout = ({
   return (
     <>
       <div className="min-vh-100 w-100">
-        <section className="border border-white mt-5 sectionCharacterBox container">
+        <section className="border border-white mt-5 sectionElementBox container">
           <h1 className="text-center mt-4 fs-1">{name}</h1>
           <article className="row">
             <img

@@ -48,7 +48,7 @@ body{
     border-radius: 100%;
 }
 
-.sectionCharacterBox{
+.sectionElementBox{
     box-shadow: 1px 20px 10px rgba(235, 234, 234, 0.972);
     background-color: black;
 }
