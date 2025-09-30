@@ -7,6 +7,11 @@ body{
     color: white;
 }
 
+.imgLoading{
+    width: 55%;
+    height: 25%;
+}
+
 ::-webkit-scrollbar {
   height: 15px; 
 }
@@ -30,11 +35,10 @@ body{
 }
 
 .img-navbar{
-    height: 65px;
+    height: 75px;
     width: 110px;
     border: none;
     display: block;
-    box-shadow: -150px -150px 150px rgba(45, 5, 5, 0.972);
 }
 
 .main-config{
@@ -60,6 +64,7 @@ body{
 .article-config {
     display: flex;
     overflow-x: auto;
+    width: 100%;
 }
 
 .img-card{

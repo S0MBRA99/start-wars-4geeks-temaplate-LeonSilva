@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoNav from "../assets/img/logoNav.jpg"
+import logoNav from "../../public/img/logoNav-removebg-preview.png"
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 
 export const Navbar = () => {
@@ -17,7 +17,7 @@ export const Navbar = () => {
 					<ul className="dropdown-menu dropdown-menu-end bg-dark">
 						{store.liked.map((like,index)=>{
 							return(
-								<div key={index} className="d-flex align-items-center px-2 py-1">
+								<div key={index} className="d-flex align-items-center justify-content-center px-2 py-1">
 									<li className="text-white flex-grow-1">{like}</li>
 									<button 
 										className="btn btn-secondary btn-sm ms-2" 
@@ -34,7 +34,6 @@ export const Navbar = () => {
 						})}
 					</ul>
 				</div>
-					
 			</div>
 		</nav>
 	);
